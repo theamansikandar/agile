@@ -3,7 +3,10 @@ from flask import Flask, request
 app = Flask(__name__)
 
 def get_grade(avg):
-    return "Push 1"
+    if avg >= 90: return "A"
+    if avg >= 80: return "B"
+    if avg >= 70: return "C"
+    return "F"
 
 @app.route('/calculate')
 def calculate():
