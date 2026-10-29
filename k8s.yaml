@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: app
-        image: your_dockerhub_username/student-calc:v1
+        image: theamansikandar/student-calc:v1
         ports:
         - containerPort: 5000
 ---
